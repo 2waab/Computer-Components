@@ -1,0 +1,53 @@
+/* Google Fonts - Cairo - */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    --white-color: #fff;
+    --black-color: #333;
+    --main-color: #A76772;
+    --main-transition: 0.3s;
+    --border-radues: 999999px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+}
+.container {
+    padding: 0 20px;
+}
+.container h1 {
+    text-align: center;
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+.container a {
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+.container p {
+    text-align: center;
+    color: var(--black-color);
+    font-weight: bold;
+}
+.container p.title {
+    color: var(--main-color);
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+    .container h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}

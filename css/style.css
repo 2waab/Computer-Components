@@ -1,0 +1,98 @@
+/* Google Fonts - Cairo - */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    --white-color: #fff;
+    --black-color: #333;
+    --main-color: #A76772;
+    --main-transition: 0.3s;
+    --border-radues: 999999px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--white-color);
+}
+.vector {
+    position: fixed;
+    left: -500px;
+    width: 1100px;
+    opacity: 0.7;
+    z-index: 2;
+}
+.vector-2 {
+    position: fixed;
+    z-index: 1;
+    left: -560px;
+    width: 1000px;
+    opacity: 0.8;
+}
+.container {
+    position: absolute;
+    z-index: 3;
+    right: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container header img {
+    width: 70%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container header h3 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: bold;
+}
+.main-btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-btn button {
+    width: 45%;
+    background-color: var(--main-color);
+    height: 40px;
+    border-radius: var(--border-radues);
+    border: none;
+    outline: none;
+}
+.main-btn button a {
+    color: var(--white-color);
+    font-size: 16px;
+    text-decoration: none;
+}
+.small-btn {
+    margin-top: 20px;
+}
+.small-btn a {
+    text-align: center;
+    display: block;
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+@media (max-width: 767px) {
+    .vector {
+        left: -900px;
+        width: 1100px;
+    }
+    .vector-2 {
+        left: -800px;
+        width: 1100px;
+    }
+    .container {
+        right: 6%;
+    }
+}
